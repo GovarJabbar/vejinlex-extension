@@ -1,0 +1,15 @@
+{
+    "name": "vejinlex-extension",
+    "version": "1.0.0",
+    "description": "an attempt to collect all available Kurdish dictionaries.",
+    "repository": "https://github.com/GovarJabbar/vejinlex-extension.git",
+    "author": "Govar Jabar <govarjabara@gmail.com>",
+    "scripts": {
+        "prod": "node make.js",
+        "production": "node make.js"
+    },
+    "dependencies": {
+        "fs-extra": "^10.1.0",
+        "replace": "^1.2.1"
+    }
+}

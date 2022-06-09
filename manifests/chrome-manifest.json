@@ -1,0 +1,25 @@
+{
+    "name": "VejînLex",
+    "version": "1.0.0",
+    "description": "an attempt to collect all available Kurdish dictionaries.",
+    "permissions": [
+        "contextMenus",
+        "scripting"
+    ],
+    "host_permissions": [
+        "<all_urls>"
+    ],
+    "icons": {
+        "16": "images/favicon-16x16.png",
+        "32": "images/favicon-32x32.png",
+        "196": "images/icon-196x196.png"
+    },
+    "background": {
+        "service_worker": "js/background.js"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": "images/favicon-32x32.png"
+    },
+    "manifest_version": 3
+}
