@@ -10,6 +10,7 @@
     },
     "dependencies": {
         "fs-extra": "^10.1.0",
-        "replace": "^1.2.1"
+        "replace": "^1.2.1",
+        "strip-comments": "^2.0.1"
     }
 }

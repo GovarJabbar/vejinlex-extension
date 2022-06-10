@@ -1,14 +1,22 @@
 const vejinlex_url = "https://lex.vejin.net/ck/search"
 
 chrome.contextMenus.create({
-    id: 'vejinlex',
+    id: 'vejinlex-selection',
     title: "VejînLex: \"%s\"",
-    contexts: ["all"],
+    contexts: ["selection"],
 });
+
+/*** Start Chrome ***/
+chrome.contextMenus.create({
+    id: 'vejinlex',
+    title: "VejînLex",
+    contexts: ["action", "audio", "browser_action", "editable", "frame", "image", "link", "page", "page_action", "selection"],
+});
+/*** End Chrome ***/
 
 chrome.contextMenus.onClicked.addListener((info, tab) => {
 
-    if (info.menuItemId == "vejinlex") {
+    if (info.menuItemId == "vejinlex" || info.menuItemId == "vejinlex-selection") {
 
         let dictionary_url = vejinlex_url;
 

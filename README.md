@@ -18,3 +18,5 @@ or
 yarn production
 ```
 
+### Requirements
+* Node.js

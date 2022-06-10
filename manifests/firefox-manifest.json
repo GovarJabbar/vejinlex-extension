@@ -4,7 +4,6 @@
     "description": "an attempt to collect all available Kurdish dictionaries.",
     "permissions": [
         "contextMenus",
-        "scripting",
         "<all_urls>"
     ],
     "icons": {
@@ -23,7 +22,7 @@
     },
     "browser_specific_settings": {
         "gecko": {
-            "id": "govarjabara@gmail.com"
+            "id": "govar.web@gmail.com"
         }
     },
     "manifest_version": 2
