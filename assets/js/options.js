@@ -18,7 +18,6 @@ const interface_languages = [{
 
 let vejinlex_language = 'ck';
 
-
 chrome.storage.sync.get([
     'vejinlex_language',
 ], function(result) {
