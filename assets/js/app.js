@@ -1,6 +1,14 @@
-const vejinlex_url = "https://lex.vejin.net/ck/search"
+let vejinlex_language = 'ck';
+let vejinlex_url;
 
 window.onload = async() => {
+
+    chrome.storage.sync.get([
+        'vejinlex_language',
+    ], function(result) {
+        vejinlex_language = result.vejinlex_language
+        vejinlex_url = `https://lex.vejin.net/${result.vejinlex_language}/search`
+    });
 
     let result;
     /*** Start Chrome ***/

@@ -4,6 +4,7 @@
     "description": "an attempt to collect all available Kurdish dictionaries.",
     "permissions": [
         "contextMenus",
+        "storage",
         "scripting"
     ],
     "host_permissions": [
@@ -20,6 +21,9 @@
     "action": {
         "default_popup": "popup.html",
         "default_icon": "images/favicon-32x32.png"
+    },
+    "options_ui": {
+        "page": "options.html"
     },
     "manifest_version": 3
 }

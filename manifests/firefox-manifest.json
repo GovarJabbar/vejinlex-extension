@@ -4,6 +4,7 @@
     "description": "an attempt to collect all available Kurdish dictionaries.",
     "permissions": [
         "contextMenus",
+        "storage",
         "<all_urls>"
     ],
     "icons": {
@@ -19,6 +20,9 @@
     "browser_action": {
         "default_popup": "popup.html",
         "default_icon": "images/favicon-32x32.png"
+    },
+    "options_ui": {
+        "page": "options.html"
     },
     "browser_specific_settings": {
         "gecko": {
